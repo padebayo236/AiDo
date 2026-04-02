@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumière Beauty Spa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="nav container">
+      <h1 class="logo">Lumière Spa</h1>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#booking">Booking</a></li>
+      </ul>
+      <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+    </nav>
+
+    <div class="hero-content container">
+      <p class="eyebrow">Relax • Renew • Glow</p>
+      <h2>Luxury Beauty & Wellness Experience</h2>
+      <p>
+        Step into tranquility with personalized facials, massage therapy,
+        and skin rituals designed for your natural radiance.
+      </p>
+      <a href="#booking" class="btn">Book Your Escape</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container" id="services">
+      <h3>Our Signature Services</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Glow Facial</h4>
+          <p>Deep-cleansing facial with hydration infusion and LED therapy.</p>
+          <span>$85 • 60 min</span>
+        </article>
+        <article class="card">
+          <h4>Aromatherapy Massage</h4>
+          <p>Full-body massage using calming oils to melt away stress.</p>
+          <span>$120 • 75 min</span>
+        </article>
+        <article class="card">
+          <h4>Botanical Body Polish</h4>
+          <p>Natural exfoliation treatment for smooth, refreshed skin.</p>
+          <span>$95 • 50 min</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div>
+          <h3>Why Choose Lumière?</h3>
+          <p>
+            Our expert therapists blend modern techniques with holistic care.
+            Every visit is tailored to your skin and wellness goals, creating a
+            deeply restorative and luxurious experience.
+          </p>
+        </div>
+        <ul>
+          <li>✓ Certified skincare professionals</li>
+          <li>✓ Organic and cruelty-free products</li>
+          <li>✓ Serene private treatment rooms</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section container" id="booking">
+      <h3>Request an Appointment</h3>
+      <form id="bookingForm" class="booking-form">
+        <label>
+          Full Name
+          <input type="text" id="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" id="email" required />
+        </label>
+        <label>
+          Service
+          <select id="service" required>
+            <option value="">Choose a service</option>
+            <option>Glow Facial</option>
+            <option>Aromatherapy Massage</option>
+            <option>Botanical Body Polish</option>
+          </select>
+        </label>
+        <label>
+          Preferred Date
+          <input type="date" id="date" required />
+        </label>
+        <button type="submit" class="btn">Submit Request</button>
+        <p id="formMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Lumière Beauty Spa • All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
